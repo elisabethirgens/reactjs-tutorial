@@ -1,11 +1,7 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-}
-
-ol,
-ul {
-  padding-left: 30px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
+  background-color: #ccc;
+  margin: 3rem;
 }
 
 .board-row:after {
@@ -14,30 +10,23 @@ ul {
   display: table;
 }
 
-.status {
-  margin-bottom: 10px;
-}
-
 .square {
-  background: #fff;
-  border: 1px solid #999;
   float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  width: 10rem;
+  height: 10rem;
   padding: 0;
+  background: #fff;
+  border: 4px solid #333;
+  margin-right: -3px;
+  margin-top: -3px;
   text-align: center;
-  width: 34px;
+  font-size: 8rem;
+  font-weight: 1000;
+  color: teal;
 }
 
 .square:focus {
   outline: none;
-}
-
-.kbd-navigation .square:focus {
   background: #ddd;
 }
 
@@ -47,5 +36,31 @@ ul {
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-left: 5rem;
+  padding-top: 0.5rem;
+}
+
+.game-info > div {
+  font-size: 2rem;
+  font-weight: 666;
+  color: teal;
+  margin-bottom: 2rem;
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.game-info button {
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+  padding: 0.25rem 1rem;
+  margin-bottom: 0.5rem;
+  background: #ddd;
+  border: none;
+}
+
+.game-info button:hover {
+  background: #fff;
 }
